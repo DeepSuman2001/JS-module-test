@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="names">
+                <p class="head">Rock</p>
+                <p class="head">Paper</p>
+                <p class="head">Scissor</p>
+            </div>
+            <div class="comp_score">
+                <div class="comp_score_title">computer score</div>
+                <div id="comp_score_number">0</div>
+            </div>
+            <div class="your_score">
+                <div class="your_score_title">Your</br>Score</div>
+                <div id="your_score_number">0</div>
+            </div>               
+        </header>
+
+        <section class="game">
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="rock.png" alt="rock">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="scissor">
+                <div class="choice scissor">
+                    <img src="scissor.png" alt="scissor">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="paper.png" alt="paper">
+                </div>
+            </button>
+        </section>
+    </div>
+ 
+    <section class="secpage hidden">
+        <h2 class="sec_head">You picked</h2>
+        <h2 class="sec_head">pc picked</h2>
+        <div class="results"></div>
+        <div class="results_winner hidden">
+            <h3 class="results_text"></h3>
+            <button class="play_again">play again</button>
+        </div>
+        <div class="results"></div>
+    </section>
+
+    <button class="rules-btn">rules</button> 
+    <div class="popup">
+        <div class="popup_container">
+           <header class="popup_header">
+                <h2 class="ruleshead">Game Rules</h2>
+           </header>
+           <button class="close-btn">X</button>
+           <div class="text">
+            <ul>
+                <li class="item">Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li class="item">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li class="item">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li class="item">If both players lay down the same hand, each player lays down another hand</li>
+              </ul>
+           </div>
+           
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
